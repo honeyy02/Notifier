@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/add_icon"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Add a task"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Fill the details below to add a bills into your TODO"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:alpha="0.8"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Bill Title"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:background="@drawable/btn_border"
+            android:padding="10dp"
+            android:id="@+id/addBillTitle"
+            android:drawableLeft="@drawable/list"
+            android:textColor="@color/black"
+            />
+
+
+
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Bill date"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:visibility="visible"
+            android:background="@drawable/btn_border"
+            android:padding="10dp"
+            android:id="@+id/billDate"
+            android:drawableLeft="@drawable/calendar"
+            android:inputType="date"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Bill time"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:background="@drawable/btn_border"
+            android:padding="10dp"
+            android:id="@+id/billTime"
+            android:drawableLeft="@drawable/time"
+            android:textColor="@color/black"
+            />
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addBill"
+            android:text="Add Bill"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="40dp" />
+
+    </LinearLayout>
+
+</ScrollView>
